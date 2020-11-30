@@ -1,0 +1,16 @@
+<div>
+    <form method="post">
+        <h1>New Tweet</h1>
+        <div>
+          <input
+            type="text"
+            [(ngModel)]="newTweet.mensaje"
+            name="tweet"
+            placeholder="Text something..."
+            required="required"
+          />
+        </div>
+      <button type="submit" class="btn btn-primary boton" (click)="createTweet();">Send</button>
+      <button (click)="backTweets()">Back</button>
+    </form>
+</div>

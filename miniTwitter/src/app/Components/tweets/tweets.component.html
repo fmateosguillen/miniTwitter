@@ -1,0 +1,15 @@
+<div class="container">
+    <table>
+        <thead>
+            <button (click)="goNewTweet()">Tweet-it</button>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tweet of tweetsList">
+                <td>{{tweet.user.username}}</td>
+                <td>{{}tweet.mensaje}</td>
+                <td>{{tweet.likes.length}}</td>
+                <button (click) = "doLike([tweet.id])">Like</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
